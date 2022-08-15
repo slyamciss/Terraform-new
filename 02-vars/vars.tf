@@ -1,5 +1,7 @@
-variable "sample" {}
+#variable "sample" {}
 
-output "sample" {
-  value = var.sample
+variable "sample" {
+  default: "Hello world!"
 }
+
+
