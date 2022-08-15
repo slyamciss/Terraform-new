@@ -13,3 +13,7 @@ output "list3" {
 output "map1" {
   value = var.map["string"]
 }
+
+output "map2" {
+  value = var.map["number"]
+}
