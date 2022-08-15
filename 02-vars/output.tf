@@ -18,7 +18,11 @@ output "map2" {
   value = var.map["number"]
 }
 
-output "wife" {
+output "new" {
   value = var.new
+}
+
+output "cli" {
+  value = var.cli
 }
 
