@@ -20,3 +20,28 @@ variable "sample2" {
 variable "sample3" {
   default = true
 }
+
+## Terraform supports 3 variables types :
+# Default Variable
+variable "sample4" {
+  default = "Hello world!"
+}
+
+# List Variable Type
+variable "sample5" {
+  default = [
+  "Hello",
+    1000,
+    true,
+    "world!"
+  ]
+}
+
+# Map Variable Type
+variable "sample6" {
+  default =  {
+    string = "Hello world!",
+    number = 100
+    boolean = true
+  }
+}
