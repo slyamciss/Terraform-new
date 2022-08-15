@@ -40,9 +40,9 @@ variable "list" {
 }
 
 # Map Variable Type
-variable "sample6" {
+variable "map" {
   default =  {
-    string = "Hello world!",
+    string = "Hello sons !",
     number = 100
     boolean = true
   }

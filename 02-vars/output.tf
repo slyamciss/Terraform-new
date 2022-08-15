@@ -9,3 +9,7 @@ output "list1" {
 output "list3" {
   value = var.list[3]
 }
+
+output "map1" {
+  value = var.map["string"]
+}
