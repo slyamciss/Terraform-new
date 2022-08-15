@@ -28,7 +28,9 @@ variable "sample4" {
 }
 
 # List Variable Type
-variable "sample5" {
+# List can have value of different data types
+
+variable "list" {
   default = [
   "Hello",
     1000,
