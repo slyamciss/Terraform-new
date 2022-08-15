@@ -17,3 +17,8 @@ output "map1" {
 output "map2" {
   value = var.map["number"]
 }
+
+output "wife" {
+  value = var.new
+}
+
