@@ -56,3 +56,9 @@ variable "cli" {}
 
 ## variable from shell
 variable "shell" {}
+
+## Variable precedence
+## 1. -var and -var-file
+## 2. *.auto.tfvars
+## 3. terraform.tfvars
+## 4. SHELL, ENV, VARS
