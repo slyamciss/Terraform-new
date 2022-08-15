@@ -1,7 +1,7 @@
 #variable "sample" {}
 
 variable "sample" {
-  default: "Hello world!"
+  default = "Hello world!"
 }
 
 
