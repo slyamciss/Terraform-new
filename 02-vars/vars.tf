@@ -35,7 +35,7 @@ variable "list" {
   "Hello",
     1000,
     true,
-    "world!"
+    "tariq & Bilal"
   ]
 }
 
