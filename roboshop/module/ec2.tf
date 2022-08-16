@@ -30,3 +30,16 @@ resource "aws_ec2_tag" "ec2-monitor-tag" {
   key         = "Monitor"
   value       = var.MONITOR
 }
+
+resource "null_resource" "ansible-apply"  {
+  provisioner "remote-exec" {
+    connection {
+      user     = "root"
+      password = "DevOps321"
+      host     = aws_spot_instance_request.ec2.public_ip
+    }
+    inline = [
+      "ansible pull -U https://github.com/slyamciss/ansible-1.git roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
+    ]
+  }
+}
