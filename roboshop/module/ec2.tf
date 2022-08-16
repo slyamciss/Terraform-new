@@ -32,6 +32,9 @@ resource "aws_ec2_tag" "ec2-monitor-tag" {
 }
 
 resource "null_resource" "ansible-apply"  {
+  triggers = {
+    abc= timestamp()
+  }
   provisioner "remote-exec" {
     connection {
       user     = "root"
