@@ -39,7 +39,7 @@ resource "null_resource" "ansible-apply"  {
       host     = aws_spot_instance_request.ec2.public_ip
     }
     inline = [
-      "ansible pull -U https://github.com/slyamciss/ansible-1.git roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
+      "ansible pull -U https://github.com/raghudevopsb62/ansible.git roboshop-pull.yml -e COMPONENT=${var.COMPONENT} -e ENV=dev"
     ]
   }
 }
