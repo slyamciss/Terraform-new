@@ -11,5 +11,5 @@ output "get_first_value" {
 }
 
 output "get_first_value_2" {
-  value = element(var.list, 1 )
+  value = element(var.list, 0 )
 }
