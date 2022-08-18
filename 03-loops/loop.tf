@@ -3,7 +3,7 @@ resource "null_resource" "new" {
     abc = timestamp()
   }
   count = 3
-  provisioner "remote-exec" {
-    command = "Hello WORLD"
+  provisioner "local-exec" {
+    command = "Hello World"
   }
 }
